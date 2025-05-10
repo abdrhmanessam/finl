@@ -16,7 +16,7 @@
 
       echo "<tr>
               <td>{$row['name']}</td>
-              <td>{$row['price']}</td>
+              
               <td>{$row['description']}</td>
               <td>
                 <a href='edit.php?id={$row['id']}'>Edit</a> | 

@@ -10,13 +10,13 @@ $product = mysqli_fetch_assoc($result);
 <h2>Edit Product</h2>
 <form method="post">
 
-  Name: <input type="text" name="name" value="<?= $product['name'] ?>"><br><br>
+  DFHDSJFHSJDJH: <input type="text" name="name" value="<?= $product['name'] ?>"><br><br>
   Price: <input type="text" name="price" value="<?= $product['price'] ?>"><br><br>
   <input type="submit" value="Update">
 </form>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
   $name = $_POST['name'];
   $price = $_POST['price'];
   mysqli_query($conn, "UPDATE products SET name='$name', price='$price' WHERE id=$id");
